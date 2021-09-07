@@ -1,4 +1,51 @@
+html,
+body,
+#root {
+    height: 100%;
+}
+
+footer {
+    color: #fff;
+}
+
+footer.page-footer {
+    flex-shrink: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.navbar {
+    padding: .5rem;
+}
 
 .hide {
     display: none;
+}
+
+.active {
+    color: orange;
+}
+
+.text {
+    padding: 20px;
+    padding-top: 60px;
+}
+
+.button-list {
+    list-style-type: none;
+}
+
+.button-list li {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
 }
