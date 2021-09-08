@@ -63,22 +63,38 @@ function Note() {
     }
 
     return (
-        <div>
-            < div className={noteClass}>
-                <h4>Note:</h4>
-                <div>{noteText}</div>
-                <div><button onClick={searchNote}>Искать другой note</button></div>
-            </div>
-            <div className={errorClass}>
-                <p>Ошибка, hash с такой заметкой не найден!</p>
-            </div>
+        <div className="container">
+            <div className="col-12">
 
-            <div className={formClass}>
-                <form action="" onSubmit={receiveNote}>
-                    <label htmlFor="url">Введите hash заметки</label>
-                    <input type="text" name="url" id="url" className="form-control" />
-                    <button type="submit" className="btn btn-primary">Найти заметку</button>
-                </form>
+                <div className="text">
+                    <form action="" onSubmit={receiveNote} className={formClass}>
+                        <div className="form-group">
+                            <label htmlFor="url">Введите hash заметки</label>
+                            <input type="text" name="url" id="url" className="form-control" />
+                        </div>
+                        <div className="form-group text-right">
+                            <button type="submit" className="btn btn-warning">Найти заметку</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div className={noteClass}>
+                    <div className="alert alert-success" role="alert">
+                        <h4 className="alert-heading">Note: {noteURL}</h4>
+                        <div>{noteText}</div>
+                        <hr />
+                        <p className="mb-0">Внимание!!! Скопируйте заметку. После показа заметка будет удалена!</p>
+                    </div>
+                    <div className="text-right"><button onClick={searchNote} className="btn btn-warning">Искать другую заметку</button></div>
+                </div>
+
+                <div className={errorClass}>
+                    <div className="alert alert-danger" role="alert">
+                        <p>Ошибка, hash с такой заметкой не найден!</p>
+                    </div>
+                    <div className="text-right"><button onClick={searchNote} className="btn btn-warning">Искать другую заметку</button></div>
+                </div>
+
             </div>
         </div>
     );

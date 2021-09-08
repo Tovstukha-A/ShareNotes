@@ -2,10 +2,11 @@ function Main() {
     return (
         <div className="container">
             <div className="col-12">
+
                 <div className="text">
                     <ul className="row button-list">
-                        <li className="col-6"><a href="/create" type=" button" className="btn btn-primary">Создать заметку</a></li>
-                        <li className="col-6"><a href="/note" type=" button" className="btn btn-primary">Посмотреть заметку</a></li>
+                        <li className="col-6"><a href="/create" type=" button" className="btn btn-warning">Создать заметку</a></li>
+                        <li className="col-6"><a href="/note" type=" button" className="btn btn-warning">Посмотреть заметку</a></li>
                     </ul>
                 </div>
 
@@ -20,6 +21,7 @@ function Main() {
                     </ul>
                     <p>Как прочитать заметку? Перейдите по присланному URL, либо введите адрес руками здесь.</p>
                 </div>
+                
             </div>
         </div>
     );
