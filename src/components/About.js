@@ -1,12 +1,13 @@
+
 function About() {
     return (
         <div className="container">
             <div className="text">
-                <p>In expression an solicitude principles in do. He in sportsman household otherwise it perceived instantly. Sportsman do offending supported extremity breakfast by listening. To sure calm much most long me mean. Girl quit if case mr sing as no have. Polite do object at passed it is. Considered discovered ye sentiments proj</p>
+                <p>История шифрования - это история «конкурса остроумия» между разработчиками шифрования и шифровальными кодами. Каждый раз, когда создается новый алгоритм шифрования, он расшифровывается и, в свою очередь, приводит к созданию нового алгоритма шифрования, а циклы создания и дешифрования алгоритмов повторяются и по сей день.</p>
 
-                <p>Took sold add play may none him few. Course sir people worthy horses add entire suffer. Celebrated delightful an especially increasing instrument am. Decisively advantages nor expression unpleasing she led met. Draw fond rank form nor the day eat. Ecstatic elegance gay but disposed. If in so bred at dare rose lose good.</p>
+                <p>Криптография насчитывает не одно тысячелетие и нашла свое уверенное место в современных реалиях – сегодня без шифрования невозможно представить банковские операции, мессенджеры и приложения, мобильную связь, и др.</p>
 
-                <p>Equally he minutes my hastily. Sitting hearted on it without me. Mirth learn it he given. Expression alteration entreaties mrs can terminated estimating. Happiness remainder joy but earnestly for off. At principle perfectly by sweetness do. In expression an solicitude principles in do. Feel and make two real.</p>
+                <p>За наукообразным словом «криптография» (с древнегреческого буквально − «тайнопись») скрывается древнее желание человека спрятать важную информацию от посторонних глаз. Можно сказать, что сама письменность в самом начале уже была криптографической системой, так как принадлежала узкому кругу людей, и с помощью нее они могли обмениваться знаниями, недоступными неграмотным. С распространением письма возникла потребность в более сложных системах шифрования</p>
             </div>
         </div>
     );

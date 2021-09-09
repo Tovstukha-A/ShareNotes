@@ -49,3 +49,10 @@ footer.page-footer {
 .form-group {
     margin-bottom: 1rem;
 }
+
+@media (max-width: 575.98px) {
+
+    footer.page-footer {
+        display: none;
+    }
+}

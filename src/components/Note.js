@@ -13,6 +13,7 @@ function Note() {
 
     useEffect(() => {
         if (noteURL !== undefined) {
+            setFormClass('hide');
             fetch(env.urlBackend, {
                 method: 'POST',
                 headers: {
@@ -27,7 +28,6 @@ function Note() {
                         setNoteText(response.note);
                         setNoteClass('');
                         setFormClass('hide');
-                        setErrorClass('hide');
                     }
                     else if (!response.result) {
                         setNoteClass('hide');
@@ -39,7 +39,6 @@ function Note() {
         else {
             setNoteClass('hide');
             setFormClass('');
-            setErrorClass('hide');
         }
     }, []);
 
