@@ -17,6 +17,17 @@ footer.page-footer {
     flex-direction: column;
 }
 
+img {
+    display: block;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+figcaption {
+    font-size: 12px;
+    text-align: center;
+} 
+
 .main {
     flex: 1 0 auto;
 }
