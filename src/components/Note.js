@@ -40,7 +40,7 @@ function Note() {
             setNoteClass('hide');
             setFormClass('');
         }
-    }, []);
+    }, [noteURL]);
 
     function receiveNote(event) {
         event.preventDefault();
