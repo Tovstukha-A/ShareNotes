@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main {
+  min-height: 100vh; 
+  margin: 0; 
+  display: grid;
+  grid-template-areas:
+    "header "
+    "main"
+    "footer";
+    grid-template-rows: auto 1fr auto;
+}
+
+.main>nav{
+  grid-area: header;
+}
+
+.main>.container {
+  grid-area: main;
+}
+
+.main>.site-footer {
+  grid-area: footer;
+}
+

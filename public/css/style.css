@@ -12,11 +12,6 @@ footer.page-footer {
     flex-shrink: 0;
 }
 
-#root {
-    display: flex;
-    flex-direction: column;
-}
-
 img {
     display: block;
     max-width: 550px;
@@ -28,9 +23,6 @@ figcaption {
     text-align: center;
 } 
 
-.main {
-    flex: 1 0 auto;
-}
 
 .navbar {
     padding: .5rem;

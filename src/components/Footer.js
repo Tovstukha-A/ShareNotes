@@ -1,7 +1,7 @@
 
 function Footer() {
     return (
-        <div className="fixed-bottom">
+        <div className="site-footer">
             <footer className="page-footer font-small navbar-dark bg-dark ">
                 <div className="container navbar-nav">
                     <div className="footer-copyright text-center py-3">
